@@ -11,7 +11,7 @@
 
 | Gameplay | Game Over |
 |----------|-----------|
-| ![Gameplay Screenshot](screenshots/gameplay.png) | ![Game Over Screenshot](screenshots/gameover.png) |
+| ![Gameplay Screenshot](screenshots/gameplay.png) |
 
 ---
 
