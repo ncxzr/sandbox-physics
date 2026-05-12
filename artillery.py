@@ -2,7 +2,7 @@ import pygame
 import math
 import random
 
-# --- setup ---
+# setup 
 pygame.init()
 W, H = 800, 500
 screen = pygame.display.set_mode((W, H))
@@ -11,11 +11,11 @@ clock = pygame.time.Clock()
 font = pygame.font.SysFont("monospace", 18)
 small = pygame.font.SysFont("monospace", 14)
 
-# --- constants ---
+# constants
 g = 300        # gravity (pixels/s^2)
 dt = 1/60
 
-# --- game state ---
+# game state
 angle = 45.0       # degrees
 velocity = 300.0   # pixels/s
 score = 0
@@ -34,7 +34,7 @@ def new_target():
 
 target = new_target()
 
-# --- ball ---
+#  ball 
 ball = None  # None means not fired yet
 trajectory = []  # preview dots
 
@@ -61,7 +61,7 @@ def fire():
         "vx": velocity * math.cos(rad),
         "vy": -velocity * math.sin(rad)
     }
-    trajectory = []  # hide preview while ball is flying
+    trajectory = []  #HIDE PRIVIEW
 
 def draw_cannon():
     # base
@@ -117,7 +117,7 @@ while running:
             ball["y"] += ball["vy"] * dt
             ball["vy"] += g * dt
 
-            # hit target?
+            # hit target
             tx, ty, tw, th = target["x"], target["y"], target["w"], target["h"]
             if tx < ball["x"] < tx + tw and ty < ball["y"] < ty + th:
                 score += 1
