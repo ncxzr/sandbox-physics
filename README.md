@@ -9,9 +9,9 @@
 > **Add your screenshots here!**
 > Replace the placeholders below by dragging your image files into this folder, then update the paths.
 
-| Gameplay | Game Over |
-|----------|-----------|
-| ![Gameplay Screenshot](screenshots/gameplay.png) |
+| Gameplay | 
+|----------|
+| ![Gameplay Screenshot](screenshots/gameplay.png) 
 
 ---
 
@@ -20,11 +20,8 @@
 > **Add your demo here!**
 > Record a short screen capture (e.g. with OBS, QuickTime, or ShareX) and drop it here.
 
-<!-- Option 1 — GitHub-hosted video (drag .mp4 into the issue editor, copy the link) -->
-<!-- ![Demo](screenshots/demo.mp4) -->
 
-<!-- Option 2 — YouTube / Google Drive link -->
-[![Watch the demo](https://img.shields.io/badge/▶%20Watch%20Demo-YouTube-red?style=for-the-badge&logo=youtube)](https://youtube.com/your-link-here)
+[![Watch the demo](screenshots/demo.gif)
 
 ---
 
@@ -42,16 +39,17 @@ The goal was simple: take the formulas from class and turn them into something y
 
 The core of the game is the standard **kinematic equations for projectile motion**:
 
-$$x = v_0 \cos(\theta) \cdot t$$
+ x=v₀​cos(θ)⋅t
+ y=v₀​sin(θ)⋅t−21​gt*2
 
-$$y = v_0 \sin(\theta) \cdot t - \frac{1}{2} g t^2$$
 
-| Symbol | Meaning | Value in Game |
-|--------|---------|---------------|
-| `v₀` | Initial velocity | Adjustable: 50 – 600 px/s |
-| `θ` | Launch angle | Adjustable: 1° – 89° |
-| `g` | Gravitational acceleration | 300 px/s² (scaled for screen) |
-| `t` | Time elapsed | Advances each frame (1/60 s) |
+
+| Symbol | Meaning |
+|--------|---------|
+| `v₀` | Initial velocity 
+| `θ` | Launch angle 
+| `g` | Gravitational acceleration 
+| `t` | Time elapsed 
 
 The velocity is split into two components each frame:
 
@@ -96,24 +94,8 @@ pip install pygame
 python artillery.py
 ```
 
-That's it — no other dependencies.
 
----
 
-## 📁 Project Structure
-
-```
-artillery-game/
-│
-├── artillery.py          # Main game file (all code lives here)
-├── README.md             # This file
-└── screenshots/          # Put your screenshots/video here
-    ├── gameplay.png
-    ├── gameover.png
-    └── demo.mp4
-```
-
----
 
 ## 🧠 What I Learned
 
@@ -132,24 +114,9 @@ artillery-game/
 - **math** — `cos`, `sin`, `radians` for physics calculations
 - **random** — target placement and movement direction
 
----
-
-## 🔮 Possible Improvements
-
-- [ ] Wind resistance / air drag
-- [ ] Multiple cannon types with different `g` values (simulate Moon gravity?)
-- [ ] Explosion animation on hit
-- [ ] High score saved to a file
-- [ ] Sound effects
-
----
 
 ## 👤 Author
 
-**[Your Name]**
-[Your School / Program]
-[Your Email or GitHub]
+**Rahul Karwasara**
+***NOTRAHUL78@GMAIL.COM*
 
----
-
-> *"Physics isn't just equations on paper — it's the arc of every ball in the air."*
